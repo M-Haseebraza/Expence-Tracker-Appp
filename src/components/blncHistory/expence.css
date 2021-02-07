@@ -1,0 +1,14 @@
+.expence{
+    text-align: center;
+    width: 45%;
+    /* display: inline; */
+    background-color: white;
+    height: fit-content;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px 2px  #aaaaaa;
+}
+.expence small{
+
+    color: darkred;
+}
