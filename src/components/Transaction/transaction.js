@@ -9,12 +9,12 @@ export default function Transaction() {
                 Add Transaction
             </h4>
             <hr />
-            <form>
+            <form action="#">
                 <Amount />
                 <br/>
                 <br/>
                 <Description />
-                <button>ADD</button>
+                <button >ADD</button>
             </form>
         </div>
     )
