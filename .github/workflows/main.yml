@@ -33,8 +33,8 @@ jobs:
          # Yarn command
             cmd: install
           
-      - name: create bulid
-        run: yarn build
+      - name: create build
+        run: npm build
         
       - name: create surge
         run: npm install -g surge  
