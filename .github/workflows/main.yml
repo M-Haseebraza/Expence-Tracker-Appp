@@ -40,7 +40,7 @@ jobs:
         run: npm install -g surge  
         
       - name: deploy surge
-        run: surge ./build http://expenence-tracker.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build expenence-tracker.surge.sh --token ${{ secrets.SURGE_TOKEN }}
             
 
       # Runs a single command using the runners shell
