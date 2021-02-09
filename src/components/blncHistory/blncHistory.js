@@ -1,4 +1,4 @@
-import Reat from 'react';
+import React from 'react';
 import Income from './income'
 import Expence from './expence'
 export default function BlncHistory(){
