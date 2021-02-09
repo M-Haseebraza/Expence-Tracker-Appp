@@ -6,7 +6,7 @@ export default function Amount(){
    return( <>
     <label>Add Amount</label>
     <input ref={myRef} type='text' placeholder='Enter Amount'/>
-    <button>Hello</button>
+    <button>check</button>
     </>
    )
 }
