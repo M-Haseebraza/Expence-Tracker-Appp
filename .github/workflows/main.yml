@@ -28,7 +28,8 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
         with:
-          version:12
+             version: 12
+          
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
         with: 
@@ -42,7 +43,7 @@ jobs:
         run: npm install -g surge  
         
       - name: deploy surge
-        run: surge ./build http://expenence-tracker.surge.sh/ --token
+        run: surge ./build http://expenence-tracker.surge.sh/ --token ${{Secret.SURGE_TOKEN}}
             
 
       # Runs a single command using the runners shell
