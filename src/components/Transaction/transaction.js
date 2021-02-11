@@ -1,7 +1,5 @@
 import React from 'react';
 import './transaction.css';
-import Amount from './amount'
-import Description from "./description"
 export default function Transaction() {
     return (
         <div>
@@ -10,10 +8,12 @@ export default function Transaction() {
             </h4>
             <hr />
             <form action="#">
-                <Amount />
-                <br/>
-                <br/>
-                <Description />
+                <label>Add Amount</label>
+                <input type='text' placeholder='Enter Amount' />
+                <br />
+                <br />
+                <label>Add Description</label>
+                <input type='text' placeholder='Enter description' />
                 <button >ADD</button>
             </form>
         </div>

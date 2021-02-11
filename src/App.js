@@ -5,16 +5,19 @@ import Balance from './components/Balance/balance'
 import BlncHistory from './components/blncHistory/blncHistory'
 import History from './components/History/history'
 import Transaction from './components/Transaction/transaction'
-
+import inputAmount from './contextApi.js'
+import { useState } from 'react';
 
 function App() {
   return (
     <div className="App">
+      <inputAmount.Provider value={inputAmount}>
      <Header/>
      <Balance/>
      <BlncHistory/>
      <History/>
      <Transaction></Transaction>
+     </inputAmount.Provider>
     </div>
   );
 }
