@@ -1,6 +1,9 @@
-import React from 'react';
+import React , {useContext} from  'react';
+import inputAmount from '../../contextApi';
 import './history.css'
 export default function TranscationHist() {
+    let transData=useContext(inputAmount)
+    console.log(transData);
     return (
         <div style={{display:'flex'}}>
         <button className='deletebtn'>
@@ -11,12 +14,9 @@ export default function TranscationHist() {
                     Cash
              </small>
                 <small className='cash'>
-                    $100
              </small>
 
-            </div>
-    
-            
-        </div>
+            </div>     
+       </div>
     )
 }

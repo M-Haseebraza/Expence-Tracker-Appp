@@ -7,11 +7,11 @@ import History from './components/History/history'
 import Transaction from './components/Transaction/transaction'
 import inputAmount from './contextApi.js'
 import { useState } from 'react';
-
 function App() {
+  let listData=useState([])
   return (
     <div className="App">
-      <inputAmount.Provider value={inputAmount}>
+      <inputAmount.Provider value={listData}>
      <Header/>
      <Balance/>
      <BlncHistory/>

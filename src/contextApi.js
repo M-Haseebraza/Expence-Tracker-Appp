@@ -1,9 +1,4 @@
-import React, { createContext } from 'react';
-import Description from './components/Transaction/description';
+import  { createContext } from 'react';
 
-let inputData={
-    Amount:'',
-    Desc:''
- }
-let inputAmount= createContext(inputData);
+let inputAmount= createContext();
 export default inputAmount;
