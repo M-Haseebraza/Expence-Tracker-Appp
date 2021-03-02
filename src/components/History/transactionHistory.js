@@ -1,22 +1,15 @@
-import React , {useContext} from  'react';
+import React, { useContext } from 'react';
 import inputAmount from '../../contextApi';
 import './history.css'
+import TransData from './transactionData'
 export default function TranscationHist() {
-    let transData=useContext(inputAmount)
-    console.log(transData);
+    let transData = useContext(inputAmount)
     return (
-        <div style={{display:'flex'}}>
-        <button className='deletebtn'>
-            X
-        </button>
-            <div className='transcHis' >
-                <small>
-                    Cash
-             </small>
-                <small className='cash'>
-             </small>
-
-            </div>     
-       </div>
+        <div style={{ display: '' }}>  
+            {transData[0].map((a,index) => {
+                return (
+             <TransData key={index} des={a.Description} amount={a.Amount}></TransData>)
+            })}
+        </div>
     )
 }

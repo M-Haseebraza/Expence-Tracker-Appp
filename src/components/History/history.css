@@ -1,12 +1,28 @@
 .transcHis{
-    width:100%;
+    width:95%;
+    height: fit-content;
     margin:auto;
     background:white;
     padding: 8px;
     border-right: 4px solid steelblue;
     box-shadow: 3px 3px 3px 2px  #aaaaaa;
+    display: inline;
+}
+.transcHis-minus{
+    width:100%;
+    height: fit-content;
+    margin:auto;
+    background:white;
+    padding: 8px;
+    border-right: 4px solid darkred;
+    box-shadow: 3px 3px 3px 2px  #aaaaaa;
+    display: inline;
+
 }
 .transcHis .cash{
+    margin-left:80% ;
+}
+.transcHis-minus .cash{
     margin-left:80% ;
 }
 .deletebtn{
@@ -16,6 +32,7 @@
    text-align: center;
    height: fit-content;
    padding: 4px;
+   display: inline;
 }
 .deletebtn:hover{
     cursor: pointer;

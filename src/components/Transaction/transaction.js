@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import inputAmount from '../../contextApi';
-import Amount from './amount';
-import Description from './description';
+// import Amount from './amount';
+// import Description from './description';
 import './transaction.css';
 
 export default function Transaction() {
@@ -17,7 +17,7 @@ export default function Transaction() {
             </h4>
             <hr />
             <form action="#">
-                <Amount/>
+                {/* <Amount/> */}
                 <label>Add Amount
                 </label>
                 <input ref={ref1} onBlur={()=>{
@@ -30,15 +30,16 @@ export default function Transaction() {
                 <input ref={ref2} onBlur={()=>{
                     changeDesc(ref2.current.value);
                 }} type="text" placeholder="Enter Description"/>
-                <Description/>
+                {/* <Description/> */}
                 <button onClick={()=>{
-                    dataCheck[0].push({
-                        Amount:amount,
-                        Description:desc
-                    })
+                    dataCheck[1](
+                        [...dataCheck[0],{
+                            Amount:amount,
+                            Description:desc
+                        }]
+                    )
                     ref2.current.value=""
                     ref1.current.value=""
-                    console.log(dataCheck);
                 }} >ADD</button>
             </form>
         </div>
